@@ -1,0 +1,19 @@
+{
+  "name": "socketio_giant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristianpelaezm/socketio.git"
+  },
+  "author": "Cristian Pelaez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cristianpelaezm/socketio/issues"
+  },
+  "homepage": "https://github.com/cristianpelaezm/socketio#readme"
+}
