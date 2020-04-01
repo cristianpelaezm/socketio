@@ -47,9 +47,10 @@
 
                 // Handle Input presionar enter
                 textarea.addEventListener('keydown', function (event) {
-                    if (event.which === 13 && event.shiftKey == false) { 
-                        socket.emit('authenticate', { token: token })
-                        .on('authenticated', function () {
+                    if (event.which === 13 && event.shiftKey == false) {                       
+                      
+                        socket.on('authenticated', function () {
+                         
                             //do other things
                             // Emit to server input
                             socket.emit('input', {
@@ -64,7 +65,7 @@
                                 start_date: ' 2020-03-07 10:12:44'
                             });
                             event.preventDefault();
-                        })
+                        }).emit('authenticate', {token: token})
                              
 
 

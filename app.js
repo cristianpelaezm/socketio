@@ -20,7 +20,7 @@ mongo.connect('mongodb://127.0.0.1/component', function (err, db) {
         let chat = db.collection('componentes');
 
         // Handle input events
-        socket.on('input', function (data) {
+            socket.on('input', function (data) {
             console.log(data);
             let name = data.name;
             let message = data.message;
@@ -36,6 +36,5 @@ mongo.connect('mongodb://127.0.0.1/component', function (err, db) {
 
         console.log('hello! ' + socket.decoded_token.name);
     });
-
 
 });
